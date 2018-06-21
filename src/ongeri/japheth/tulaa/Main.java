@@ -40,5 +40,8 @@ public class Main {
                 }
             } while (number == null);
         }
+        PythagoreanTriplets pythagoreanTriplets = new PythagoreanTriplets();
+        boolean tripletsExist = pythagoreanTriplets.findPythagoreanTriplets(values);
+        System.out.println(tripletsExist);
     }
 }
