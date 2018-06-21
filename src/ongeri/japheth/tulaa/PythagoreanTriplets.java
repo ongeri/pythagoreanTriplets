@@ -10,11 +10,9 @@ public class PythagoreanTriplets {
     }
 
     public boolean findPythagoreanTriplets(List<Integer> distinctIntegers) {
-        //Sort the distinct values
+        //Sort the values
         List<Integer> sortedDistinctValues = asSortedList(distinctIntegers);
-        // Initialize result
 
-        // Every iteration of loop counts triplet with first element as arr[i].
         int n = sortedDistinctValues.size();
         for (int i = 0; i < n - 2; i++) {
             // Initialize other two elements as corner elements of subarray arr[j+1..k]
